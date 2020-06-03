@@ -49,7 +49,8 @@ public class ControlFlowExercises {
 //            }
 //        }
 
-//        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+
 //        String userInput;
 //        do {
 //            System.out.print("Enter an integer: ");
@@ -64,6 +65,28 @@ public class ControlFlowExercises {
 //            userInput = scanner.next().toLowerCase();
 //        }while (userInput.equals("yes"));
 
+        String userInput;
+        do{
+            System.out.print("Enter a numerical grade from 0 to 100: ");
+            int gradeInput = scanner.nextInt();
+            if (gradeInput <= 100 && gradeInput >= 88) {
+                System.out.print("A : 100 - 88\n");
+            }
+            if (gradeInput <= 87 && gradeInput >= 80) {
+                System.out.print("B : 87 - 80\n");
+            }
+            if (gradeInput <= 79 && gradeInput >= 67) {
+                System.out.print("C : 79 - 67\n");
+            }
+            if (gradeInput <= 66 && gradeInput >= 60) {
+                System.out.print("D : 66 - 60\n");
+            }
+            if (gradeInput <= 59 && gradeInput >= 0) {
+                System.out.print("F : 59 - 0\n");
+            }
+            System.out.print("Would you like to continue?: ");
+            userInput = scanner.next().toLowerCase();
+        }while (userInput.equals("yes"));
 
     }
 }
