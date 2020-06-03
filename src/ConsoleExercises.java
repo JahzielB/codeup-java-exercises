@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 import static java.lang.Integer.parseInt;
 
 public class ConsoleExercises {
@@ -27,13 +26,11 @@ public class ConsoleExercises {
 //        System.out.printf("Your sentence is: %s", sentence);
 
         System.out.print("Enter the length and width of your room: ");
-        String length = scanner.next();
+        int length = parseInt(scanner.next());
         scanner.nextLine();
-        String width = scanner.next();
-        int lengthInt = parseInt(length);
-        int widthInt = parseInt(width);
-        int perimeter = (2 * lengthInt) + (2 * widthInt);
-        int area =  lengthInt * widthInt;
+        int width = parseInt(scanner.next());
+        int perimeter = (2 * length) + (2 * width);
+        int area =  length * width;
         System.out.printf("The perimeter of your room is: %d.\nThe area of your room is %d", perimeter, area);
     }
 }
