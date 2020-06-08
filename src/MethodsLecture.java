@@ -21,7 +21,7 @@ public class MethodsLecture {
         orderFood("pizza");
         orderFood("grilled cheese sandwiches", 6);
         orderFood("pizza", "ice cream");
-        fibonacci(5);
+//        fibonacci(5);
     }
 
 /*
@@ -88,14 +88,14 @@ public class MethodsLecture {
 
 // HINT: you may need an additional method using a for loop to actually print
 // each number
-    public static void fibonacci (int n) {
-        if(n == 0){
-            System.out.print(0);
-        }
-        if(n == 1 || n == 2){
-            System.out.print(1);
-        }
-        System.out.print(fibonacci(n - 2) + fibonacci(n - 1));
-    }
-    }
+//    public static void fibonacci (int n) {
+//        if(n == 0){
+//            System.out.print(0);
+//        }
+//        if(n == 1 || n == 2){
+//            System.out.print(1);
+//        }
+//        System.out.print(fibonacci(n - 2) + fibonacci(n - 1));
+//    }
+//    }
 }
