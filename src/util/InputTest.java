@@ -3,7 +3,7 @@ package util;
 public class InputTest {
     public static void main(String[] args) {
 
-        var input = new Input();
+        Input input = new Input();
 
         System.out.println("Enter String:");
         System.out.println(input.getString());
