@@ -12,14 +12,37 @@ public class Person {
         this.name = name;
     }
 
+    public Person(String name) {
+        this.name = name;
+    }
+
     public void sayHello () {
     //TODO: print a message to the console using the person's name
         System.out.println("Hello " + this.name);
     }
 
     public static void main (String[] args) {
-        Person bob = new Person();
-        bob.setName("joe");
+
+        Person bob = new Person("joe");
+//        bob.setName("joe");
         bob.sayHello();
+
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+//        System.out.println(person1.getName().equals(person2.getName()));
+//        System.out.println(person1 == person2);
+
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1 == person2);
+
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+//        person2.setName("Jane");
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+
     }
 }
