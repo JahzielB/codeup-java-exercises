@@ -3,15 +3,19 @@ import java.util.Scanner;
 
 public class Input {
 
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner scanner;
 
-    public String getString(){
+    public Input() {
+        this.scanner = new Scanner(System.in);
+    }
+
+    public String getString() {
         return scanner.nextLine();
     }
 
-    public boolean yesNo(){
+    public boolean yesNo() {
         String userInput = scanner.next();
-        return userInput.equals("yes") || userInput.equals("y");
+        return userInput.equalsIgnoreCase("yes") || userInput.equalsIgnoreCase("y");
     }
 
     public int getInt(int min, int max) {
@@ -26,7 +30,14 @@ public class Input {
     }
 
     public int getInt() {
-        return scanner.nextInt();
+//        return scanner.nextInt();
+        if (scanner.hasNextInt()) {
+            return scanner.nextInt();
+        } else {
+            System.out.println("Please enter an integer.");
+            scanner.next();
+            return getInt();
+        }
     }
 
     public double getDouble(double min, double max) {

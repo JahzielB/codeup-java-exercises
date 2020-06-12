@@ -32,8 +32,12 @@ public class CircleApp {
     public static void doCircles() {
         do {
             circleInfo();
-            totalCircles += 1;
-            System.out.println("You've made " + totalCircles + " circles.");
+            totalCircles++;
+            if (totalCircles == 1) {
+                System.out.println("You've made " + totalCircles + " circle.");
+            } else {
+                System.out.println("You've made " + totalCircles + " circles.");
+            }
         } while (moreCircles());
     }
 }

@@ -23,9 +23,9 @@ public class Person {
 
     public static void main (String[] args) {
 
-        Person bob = new Person("joe");
+//        Person bob = new Person("joe");
 //        bob.setName("joe");
-        bob.sayHello();
+//        bob.sayHello();
 
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");
