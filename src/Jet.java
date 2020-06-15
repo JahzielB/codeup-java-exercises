@@ -25,4 +25,8 @@ public class Jet extends Vehicle {
         super(isOperable, passengerCapacity, powerSource);
         this.maximumAltitude = altitude;
     }
+
+    public void turnOn() {
+        System.out.println("Igniting jet engines...");
+    }
 }

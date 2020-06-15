@@ -25,4 +25,8 @@ public class Car extends Vehicle {
         super(isOperable, passengerCapacity, powerSource);
         this.milesPerGallon = miles;
     }
+
+    public void turnOn() {
+        System.out.println("Cranking engine...");
+    }
 }

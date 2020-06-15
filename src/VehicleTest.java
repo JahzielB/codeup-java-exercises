@@ -23,5 +23,21 @@ public class VehicleTest {
 //        car.setPassengerCapacity(6);
 //        car.setPowerSource("electric");
         System.out.println(car.toString());
+
+        System.out.println("==========");
+
+        Vehicle[] vehiclesArray = new Vehicle[3];
+        vehiclesArray[0] = vehicle;
+        vehiclesArray[1] = jet;
+        vehiclesArray[2] = car;
+
+        turnOnVehicles(vehiclesArray);
+
+    }
+
+    public static void turnOnVehicles(Vehicle[] array) {
+        for (Vehicle vehicle : array) {
+            vehicle.turnOn();
+        }
     }
 }
