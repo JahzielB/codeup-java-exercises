@@ -15,11 +15,8 @@ public class ArraysExercises {
 //            System.out.println(person.getName());
 //        }
 
-        Person john = new Person("John");
-//        System.out.println(Arrays.toString(addPerson(people, john)));
-
-        Person[] people1 = addPerson(people, john);
-        for (Person person : people1) {
+        people = addPerson(people, new Person("Will"));
+        for (Person person : people) {
             System.out.println(person.getName());
         }
     }
