@@ -37,12 +37,15 @@ public class Vehicle {
                 '}';
     }
 
-    public Vehicle (boolean operable, int capacity, String power) {
-        this.isOperable = operable;
-        this.passengerCapacity = capacity;
-        this.powerSource = power;
+    public Vehicle (boolean isOperable, int passengerCapacity, String powerSource) {
+        this.isOperable = isOperable;
+        this.passengerCapacity = passengerCapacity;
+        this.powerSource = powerSource;
     }
 
-    public Vehicle () {}
+//    public Vehicle () {
+//
+//    }
 
-    }
+}
+
