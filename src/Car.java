@@ -29,4 +29,8 @@ public class Car extends Vehicle {
     public void turnOn() {
         System.out.println("Cranking engine...");
     }
+
+    public void genericTurnOn() {
+        super.turnOn();
+    }
 }

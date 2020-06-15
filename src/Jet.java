@@ -29,4 +29,8 @@ public class Jet extends Vehicle {
     public void turnOn() {
         System.out.println("Igniting jet engines...");
     }
+
+    public void genericTurnOn() {
+        super.turnOn();
+    }
 }
