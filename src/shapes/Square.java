@@ -9,10 +9,12 @@ public class Square extends Rectangle{
     @Override
     public int getArea() {
         return super.getLength() * super.getLength();
+//        return length * width;
     }
 
     @Override
     public int getPerimeter() {
         return 4 * super.getLength();
+//        return 4 * length;
     }
 }
