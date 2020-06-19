@@ -39,8 +39,7 @@ public class Input {
 //            return getInt();
 //        }
         try {
-            String userInput = getString();
-            return Integer.valueOf(userInput);
+            return Integer.valueOf(getString());
         } catch (NumberFormatException e) {
             System.out.println("Please enter an integer.");
             return getInt();
@@ -67,8 +66,7 @@ public class Input {
 //            return getDouble();
 //        }
         try {
-            String userInput = getString();
-            return Double.valueOf(userInput);
+            return Double.valueOf(getString());
         } catch (NumberFormatException e) {
             System.out.println("Please enter a double.");
             return getDouble();
