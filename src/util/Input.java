@@ -19,7 +19,7 @@ public class Input {
     }
 
     public int getInt(int min, int max) {
-        int userInput = scanner.nextInt();
+        int userInput = getInt();
         if (userInput >= min && userInput <= max) {
             System.out.println("Thanks");
             return userInput;
@@ -31,17 +31,24 @@ public class Input {
 
     public int getInt() {
 //        return scanner.nextInt();
-        if (scanner.hasNextInt()) {
-            return scanner.nextInt();
-        } else {
+//        if (scanner.hasNextInt()) {
+//            return scanner.nextInt();
+//        } else {
+//            System.out.println("Please enter an integer.");
+//            scanner.next();
+//            return getInt();
+//        }
+        try {
+            String userInput = getString();
+            return Integer.valueOf(userInput);
+        } catch (NumberFormatException e) {
             System.out.println("Please enter an integer.");
-            scanner.next();
             return getInt();
         }
     }
 
     public double getDouble(double min, double max) {
-        double userInput = scanner.nextDouble();
+        double userInput = getDouble();
         if (userInput >= min && userInput <= max) {
             System.out.println("Thanks");
             return userInput;
@@ -52,6 +59,19 @@ public class Input {
     }
 
     public double getDouble() {
-        return scanner.nextDouble();
+//        if (scanner.hasNextDouble()) {
+//            return scanner.nextDouble();
+//        } else {
+//            System.out.println("Please enter a double.");
+//            scanner.next();
+//            return getDouble();
+//        }
+        try {
+            String userInput = getString();
+            return Double.valueOf(userInput);
+        } catch (NumberFormatException e) {
+            System.out.println("Please enter a double.");
+            return getDouble();
+        }
     }
 }
